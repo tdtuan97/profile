@@ -8,7 +8,6 @@ import user from "../../../mock/profile.json";
 import {Link} from "react-router-dom";
 
 export function Home() {
-    console.log(user.background_img)
     return (
         <Main>
             <div className="page home-wrapper">

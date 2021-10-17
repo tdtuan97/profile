@@ -4,7 +4,7 @@ import './App.css';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
+    Route, Redirect,
 } from "react-router-dom";
 import {Home} from "./features/profile/views/Home";
 import {About} from "./features/profile/views/About";
@@ -18,10 +18,10 @@ import user from "./mock/profile.json";
 function App() {
     return (
         <div className="App">
-            <Router>
+            <Router basename="/profile">
                 <Switch>
                     <Route path="/" exact={true}>
-                        <Home/>
+                        <Redirect to={'home'}/>
                     </Route>
 
                     <Route path="/home" exact={true}>
