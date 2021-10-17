@@ -1,0 +1,77 @@
+{
+    "id"            : "0000",
+    "username"      : "trantuan",
+    "full_name"     : "Trần Tuấn",
+    "birthday"      : "1997-06-09",
+    "born"          : 1997,
+    "gender"        : "Male",
+    "address"       : "Ho Chi Minh City",
+    "experience"    : [
+        {
+            "from"       : "2019-06",
+            "to"         : "Present",
+            "company"    : "RIVERCRANE VIETNAM",
+            "title"      : "Software Engineer",
+            "description": "PHP Web Developer"
+        }
+    ],
+    "education"     : [
+        {
+            "from"          : "2015-09",
+            "to"            : "2020-01",
+            "school"        : "Posts and Telecommunications Institute of Technology, Ho Chi Minh City",
+            "degree"        : "Engineer's degree",
+            "field_of_study": "Information Technology"
+        }
+    ],
+    "title"         : "Web Developer",
+    "skills"        : [
+        {
+            "name" : "PHP/Laravel",
+            "type" : "back-end",
+            "level": 80,
+            "image": "/skills/laravel.png"
+        },
+        {
+            "name" : "SQL/NoSQL",
+            "type" : "back-end",
+            "level": 80,
+            "image": "/skills/sql_nosql.png"
+        },
+        {
+            "name" : "HTML/CSS/Javascript",
+            "type" : "front-end",
+            "level": 80,
+            "image": "/skills/html_css_javascript.png"
+        },
+        {
+            "name" : "ReactJS/Redux",
+            "type" : "front-end",
+            "level": 60,
+            "image": "/skills/react_redux.png"
+        },
+        {
+            "name" : "Linux",
+            "type" : "back-end",
+            "level": 60,
+            "image": "/skills/linux.jpeg"
+        },
+        {
+            "name" : "Google Services",
+            "type" : "front-end",
+            "level": 60,
+            "image": "/skills/google.png"
+        }
+    ],
+    "descriptions"  : [
+        "Dolor reprehenderit aut repudiandae maiores recusandae. Consequatur dolor nisi labore commodi ipsa? Excepturi velit laboriosam at voluptatibus cupiditate est vel. Dolorem praesentium itaque fugiat placeat quas consequatur? Obcaecati natus rerum",
+        "Consectetur consectetur nesciunt nesciunt blanditiis amet? Quod quis unde aliquid excepturi laudantium? Illo architecto aliquam velit illo magnam neque perferendis sint Incidunt eius ipsa inventore labore eos velit. Minus hic magni reiciendis necessitatibus ex Quidem officia deleniti accusamus obcaecati dolores. Porro culpa quibusdam impedit porro praesentium excepturi. Alias ab consequatur?"
+    ],
+    "phone_number"  : "0969500619",
+    "facebook"      : "https://facebook.com/tdtuan97",
+    "linkedin"      : "https://linkedin.com/in/tran-tuan-b915b215b",
+    "github"        : "https://github.com/tdtuan97",
+    "email"         : "tdtuan97@gmail.com",
+    "avatar_img"    : "/user/avatar.jpeg",
+    "background_img": "/user/home-bg.jpg"
+}

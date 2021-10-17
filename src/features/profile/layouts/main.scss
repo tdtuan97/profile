@@ -1,0 +1,386 @@
+$base-color: #00A3E1;
+
+.profile-wrapper {
+    .base-button {
+        border: 2px solid #222;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        background-color: transparent;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+        cursor: pointer;
+        font-size: 14px;
+        color: #222;
+        font-weight: bold;
+        position: relative;
+        line-height: 100%;
+        letter-spacing: 1px;
+        overflow: hidden;
+    }
+
+    .page {
+        /* Using animation */
+        animation: fadeIn 1s;
+
+        position: absolute;
+        top: 0;
+        left: 200px;
+        right: 0;
+        width: auto;
+        height: 100%;
+        -webkit-perspective: 1200px;
+        perspective: 1200px;
+        overflow: hidden;
+
+        .section-container {
+            max-width: 1040px;
+            width: 90%;
+            margin: 0 auto;
+
+            .page-heading {
+                margin-bottom: 50px;
+                margin-top: 50px;
+                border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+                padding-bottom: 10px;
+
+                h2 {
+                    color: $base-color;
+                    font-size: 36px;
+                    font-weight: 700;
+                    letter-spacing: 1.5px;
+                    line-height: 1em;
+                    text-transform: capitalize;
+                    position: relative;
+                    display: inline-block;
+                }
+            }
+        }
+
+    }
+
+    .action-more {
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        width: calc(100% + 200px);
+        margin-bottom: 50px;
+
+        .btn-wrapper {
+            padding: 26px 16px 16px;
+
+            button {
+                animation: fadeIn 2s steps(120, end) infinite;
+                border-color: #ffffff;
+                color: #ffffff;
+
+                &:hover {
+                    animation: unset;
+                    background-color: $base-color;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .ico {
+            animation: fadeIn 2s steps(120, end) infinite;
+            color: #ffffff;
+        }
+
+        .btn-wrapper.btn-next {
+            button {
+                animation: unset;
+                border-color: $base-color;
+                color: $base-color;
+
+                &:hover {
+                    background-color: $base-color;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .btn-wrapper.btn-back {
+            button {
+                animation: unset;
+                border-color: $base-color;
+                color: $base-color;
+
+                &:hover {
+                    background-color: $base-color;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .home-wrapper {
+        .home-content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            overflow: auto;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            z-index: 0;
+        }
+
+        .page-active {
+            visibility: visible;
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .banner-section {
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: center;
+
+            .banner-content {
+                color: #fff;
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                text-align: center;
+                display: block;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+
+                h1 {
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-size: 62px;
+                    font-weight: bold;
+                    color: #fff;
+                }
+
+                p {
+                    font-size: 28px;
+                    display: flex;
+                    justify-content: center;
+
+                    .base-text {
+                        margin-right: 12px;
+                    }
+                }
+
+            }
+        }
+
+        .cd-words-wrapper {
+            display: inline-block;
+        }
+
+        .cd-words b {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            letter-spacing: .15em;
+            animation: typing 1.0s steps(120, end);
+        }
+    }
+
+    .section-sub {
+        text-align: center;
+        margin-bottom: 40px;
+        position: relative;
+
+        .subheading {
+            position: relative;
+            margin-bottom: 50px;
+            text-align: center;
+
+            h3 {
+                display: inline-block;
+                font-size: 22px;
+                font-weight: bold;
+                line-height: 1em;
+                letter-spacing: .5px;
+                position: relative;
+                text-transform: uppercase;
+                padding: 5px 10px;
+                border-bottom: 2px solid $base-color;
+
+                &:before {
+                    left: 0;
+                    position: absolute;
+                    content: "";
+                    width: 2px;
+                    height: 5px;
+                    background-color: $base-color;
+                    bottom: 0;
+                }
+
+                &:after {
+                    right: 0;
+                    position: absolute;
+                    content: "";
+                    width: 2px;
+                    height: 5px;
+                    background-color: $base-color;
+                    bottom: 0;
+                }
+            }
+        }
+
+    }
+
+    .about-wrapper {
+        .about {
+            margin-bottom: 70px;
+
+            .about-block {
+                h3 {
+                    font-size: 22px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .about-info {
+                ul {
+                    li {
+                        line-height: 1em;
+                        margin-bottom: 13px;
+
+                        span.title {
+                            font-family: "Playfair Display", serif;
+                            font-size: 16px;
+                            font-weight: bold;
+                            letter-spacing: .5px;
+                            border-bottom: 2px solid $base-color;
+                            position: relative;
+                            display: inline-block;
+                            margin-right: 15px;
+                            padding-bottom: 2px;
+                            color: #222;
+                        }
+                    }
+                }
+
+                .resume-button {
+                    button {
+                        border-color: $base-color;
+                        color: $base-color;
+
+                        &:hover {
+                            background-color: $base-color;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .services {
+            .service-item {
+                h4 {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
+                .icon {
+                    font-size: 50px;
+                    margin-bottom: 10px;
+                    line-height: 1em;
+                    color: $base-color;
+                }
+
+                animation: swipeToTop 1s;
+            }
+        }
+
+        .skills {
+            .skill-item {
+                .skill-icon {
+                    margin-bottom: 12px;
+                }
+
+                animation: swipeToLeft 3s;
+            }
+        }
+    }
+
+    .resume-wrapper {
+        .timeline {
+            position: relative;
+            height: 200px;
+
+            .line-left {
+                position: absolute;
+                left: 0;
+                width: 200px;
+
+                li {
+                    height: 150px;
+                    font-weight: bold;
+
+                    &:last-child {
+                        height: 0;
+                    }
+
+                    div {
+                        border-color: $base-color;
+                    }
+                }
+            }
+
+            .content-wrapper {
+                position: absolute;
+                left: 130px;
+                height: 150px;
+                text-align: left;
+                display: flex;
+                align-items: center;
+
+                .content {
+                    h4 {
+                        font-weight: bold;
+                        font-size: 18px;
+                        letter-spacing: .5px;
+                        line-height: 26px;
+                        margin: 0;
+                        text-transform: uppercase;
+                    }
+
+                    h5 {
+                        font-weight: bold;
+                        color: $base-color;
+
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        font-size: 12px;
+                        font-family: "Roboto", sans-serif;
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .skills {
+            .skill-wrapper {
+                text-align: left;
+
+                .skill-detail {
+                    h4 {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
