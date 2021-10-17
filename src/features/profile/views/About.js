@@ -127,17 +127,17 @@ export function About() {
                             })}
                         </Row>
                     </div>
-                </section>
-            </div>
-            <div className="action-more">
+                    <div className="action-more">
                         <span className="btn-wrapper btn-back">
                             <Link to={'home'}>
                                 <Button ghost className="base-button" size="large">Back</Button>
                             </Link>
                         </span>
-                <span className="btn-wrapper btn-next"><Link to={'resume'}>
+                        <span className="btn-wrapper btn-next"><Link to={'resume'}>
                             <Button ghost className="base-button" size="large">Next</Button></Link>
                         </span>
+                    </div>
+                </section>
             </div>
         </Main>
     );

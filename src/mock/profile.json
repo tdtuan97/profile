@@ -30,37 +30,37 @@
             "name" : "PHP/Laravel",
             "type" : "back-end",
             "level": 80,
-            "image": "profile/skills/laravel.png"
+            "image": "skills/laravel.png"
         },
         {
             "name" : "SQL/NoSQL",
             "type" : "back-end",
             "level": 80,
-            "image": "profile/skills/sql_nosql.png"
+            "image": "skills/sql_nosql.png"
         },
         {
             "name" : "HTML/CSS/Javascript",
             "type" : "front-end",
             "level": 80,
-            "image": "profile/skills/html_css_javascript.png"
+            "image": "skills/html_css_javascript.png"
         },
         {
             "name" : "ReactJS/Redux",
             "type" : "front-end",
             "level": 60,
-            "image": "profile/skills/react_redux.png"
+            "image": "skills/react_redux.png"
         },
         {
             "name" : "Linux",
             "type" : "back-end",
             "level": 60,
-            "image": "profile/skills/linux.jpeg"
+            "image": "skills/linux.jpeg"
         },
         {
             "name" : "Google Services",
             "type" : "front-end",
             "level": 60,
-            "image": "profile/skills/google.png"
+            "image": "skills/google.png"
         }
     ],
     "descriptions"  : [
@@ -73,5 +73,5 @@
     "github"        : "https://github.com/tdtuan97",
     "email"         : "tdtuan97@gmail.com",
     "avatar_img"    : "user/avatar.jpeg",
-    "background_img": "user/home-bg.jpg"
+    "background_img": "user/altumcode-P2SkP_PXhlU-unsplash.jpg"
 }

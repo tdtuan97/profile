@@ -15,14 +15,14 @@ export function Contact() {
                     </div>
                     <div className="contact">
                     </div>
+                    <div className="action-more">
+                        <span className="btn-wrapper btn-back">
+                            <Link to={'home'}>
+                                <Button ghost className="base-button" size="large">Go To Home</Button>
+                            </Link>
+                        </span>
+                    </div>
                 </section>
-            </div>
-            <div className="action-more">
-                <span className="btn-wrapper btn-back">
-                    <Link to={'portfolio'}>
-                        <Button ghost className="base-button" size="large">Back</Button>
-                    </Link>
-                </span>
             </div>
         </Main>
     );

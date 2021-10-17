@@ -121,19 +121,19 @@ export function Resume() {
                             </Col>
                         </Row>
                     </div>
+                    <div className="action-more">
+                        <span className="btn-wrapper btn-back">
+                            <Link to={'about'}>
+                                <Button ghost className="base-button" size="large">Back</Button>
+                            </Link>
+                        </span>
+                        <span className="btn-wrapper btn-next">
+                            <Link to={'portfolio'}>
+                                <Button ghost className="base-button" size="large">Next</Button>
+                            </Link>
+                        </span>
+                     </div>
                 </section>
-            </div>
-            <div className="action-more">
-                <span className="btn-wrapper btn-back">
-                    <Link to={'about'}>
-                        <Button ghost className="base-button" size="large">Back</Button>
-                  </Link>
-                </span>
-                <span className="btn-wrapper btn-next">
-                    <Link to={'portfolio'}>
-                        <Button ghost className="base-button" size="large">Next</Button>
-                    </Link>
-                </span>
             </div>
         </Main>
     );

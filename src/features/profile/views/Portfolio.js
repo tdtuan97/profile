@@ -15,17 +15,17 @@ export function Portfolio() {
                     </div>
                     <div className="portfolio">
                     </div>
+                    <div className="action-more">
+                        <span className="btn-wrapper btn-back">
+                            <Link to={'resume'}>
+                                <Button ghost className="base-button" size="large">Back</Button>
+                            </Link>
+                        </span>
+                        <span className="btn-wrapper btn-next"><Link to={'contact'}>
+                            <Button ghost className="base-button" size="large">Next</Button></Link>
+                        </span>
+                    </div>
                 </section>
-            </div>
-            <div className="action-more">
-                <span className="btn-wrapper btn-back">
-                    <Link to={'resume'}>
-                        <Button ghost className="base-button" size="large">Back</Button>
-                    </Link>
-                </span>
-                <span className="btn-wrapper btn-next"><Link to={'contact'}>
-                    <Button ghost className="base-button" size="large">Next</Button></Link>
-                </span>
             </div>
         </Main>
     );

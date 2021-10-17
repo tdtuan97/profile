@@ -26,17 +26,17 @@ export function Home() {
                         </span>
                         </p>
                     </div>
+                    <div className="action-more homepage">
+                        <span className="ico">
+                            <ArrowRightOutlined width="3em"/>
+                        </span>
+                        <span className="btn-wrapper">
+                            <Link to={'about'}>
+                                <Button ghost className="base-button" size="large">See more...</Button>
+                            </Link>
+                        </span>
+                    </div>
                 </section>
-            </div>
-            <div className="action-more">
-                <span className="ico">
-                    <ArrowRightOutlined width="3em"/>
-                </span>
-                <span className="btn-wrapper">
-                    <Link to={'about'}>
-                        <Button ghost className="base-button" size="large">See more...</Button>
-                    </Link>
-                </span>
             </div>
         </Main>
     );
