@@ -14,8 +14,8 @@ export function Resume() {
                         <h2>My Resume.</h2>
                     </div>
                     <div className="resume">
-                        <Row gutter={30}>
-                            <Col span={12}>
+                        <Row gutter={32}>
+                            <Col xs={24} lg={12}>
                                 <div className="section-sub">
                                     <div className="subheading">
                                         <h3>EXPERIENCE</h3>
@@ -45,7 +45,7 @@ export function Resume() {
                                     })}
                                 </div>
                             </Col>
-                            <Col span={12}>
+                            <Col xs={24} lg={12}>
                                 <div className="section-sub">
                                     <div className="subheading">
                                         <h3>EDUCATION</h3>
@@ -78,8 +78,8 @@ export function Resume() {
                         </Row>
                     </div>
                     <div className="skills">
-                        <Row gutter={30}>
-                            <Col span={12}>
+                        <Row gutter={32}>
+                            <Col xs={24} lg={12}>
                                 <div className="section-sub">
                                     <div className="subheading">
                                         <h3>FRONT-END SKILLS</h3>
@@ -99,7 +99,7 @@ export function Resume() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col span={12}>
+                            <Col xs={24} lg={12}>
                                 <div className="section-sub">
                                     <div className="subheading">
                                         <h3>BACK-END SKILLS</h3>
@@ -132,7 +132,7 @@ export function Resume() {
                                 <Button ghost className="base-button" size="large">Next</Button>
                             </Link>
                         </span>
-                     </div>
+                    </div>
                 </section>
             </div>
         </Main>

@@ -3,10 +3,11 @@ import {
     Link, useLocation
 } from "react-router-dom";
 
-import {Avatar, Button} from 'antd';
+import {Button} from 'antd';
 import {
     HomeOutlined,
     UserOutlined,
+    MenuOutlined,
     ContainerOutlined,
     ReconciliationOutlined,
     MailOutlined,
@@ -34,28 +35,27 @@ export function Sidebar() {
         <div className="sidebar-wrapper">
             <div className="sidebar-content">
                 <div className="box-avatar">
-                    <Avatar
-                        size={200}
-                        src={user.avatar_img}
-                    />
+                    <span className="avatar-circle">
+                        <img  src={user.avatar_img} alt={user.full_name}/>
+                    </span>
                     <h2 className="profile-name">{user.full_name}</h2>
                 </div>
                 <div className="box-menu">
                     <ul>
                         <li>
-                            <Link to="/home" className={cls_home}><HomeOutlined/> Home</Link>
+                            <Link to="/home" className={cls_home}><HomeOutlined/> <span className="label">Home</span></Link>
                         </li>
                         <li>
-                            <Link to="/about" className={cls_about}><UserOutlined/> About</Link>
+                            <Link to="/about" className={cls_about}><UserOutlined/> <span className="label">About</span></Link>
                         </li>
                         <li>
-                            <Link to="/resume" className={cls_resume}><ReconciliationOutlined/> Resume</Link>
+                            <Link to="/resume" className={cls_resume}><ReconciliationOutlined/> <span className="label">Resume</span></Link>
                         </li>
                         <li>
-                            <Link to="/portfolio" className={cls_portfolio}><ContainerOutlined/> Portfolio</Link>
+                            <Link to="/portfolio" className={cls_portfolio}><ContainerOutlined/> <span className="label">Portfolio</span></Link>
                         </li>
                         <li>
-                            <Link to="/contact" className={cls_contact}><MailOutlined/> Contact</Link>
+                            <Link to="/contact" className={cls_contact}><MailOutlined/> <span className="label">Contact</span></Link>
                         </li>
                     </ul>
                 </div>

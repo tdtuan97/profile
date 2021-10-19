@@ -24,8 +24,8 @@ export function About() {
                         <h2>About Me.</h2>
                     </div>
                     <div className="about">
-                        <Row gutter={30}>
-                            <Col span={16}>
+                        <Row gutter={32}>
+                            <Col xs={24} lg={14} xl={16}>
                                 <div className="about-block personal-info">
                                     <h3>{user.title}</h3>
                                 </div>
@@ -33,7 +33,7 @@ export function About() {
                                     return <p key={key}>{content}</p>
                                 })}
                             </Col>
-                            <Col span={8}>
+                            <Col xs={24} lg={10} xl={8}>
                                 <div className="about-block about-info">
                                     <h3>Personal Information</h3>
                                     <ul>
@@ -73,31 +73,31 @@ export function About() {
                         </Row>
                     </div>
                     <div className="section-sub services">
-                        <Row gutter={30}>
+                        <Row gutter={16}>
                             <Col span={24}>
                                 <div className="subheading">
                                     <h3>Services</h3>
                                 </div>
                             </Col>
-                            <Col span={6}>
+                            <Col xs={12} sm={6}>
                                 <div className="service-item">
                                     <div className="icon"><AntDesignOutlined/></div>
                                     <h4>Design</h4>
                                 </div>
                             </Col>
-                            <Col span={6}>
+                            <Col xs={12} sm={6}>
                                 <div className="service-item">
                                     <div className="icon"><CodeSandboxOutlined/></div>
                                     <h4>Development</h4>
                                 </div>
                             </Col>
-                            <Col span={6}>
+                            <Col xs={12} sm={6}>
                                 <div className="service-item">
                                     <div className="icon"><GithubOutlined/></div>
                                     <h4>Deploy</h4>
                                 </div>
                             </Col>
-                            <Col span={6}>
+                            <Col xs={12} sm={6}>
                                 <div className="service-item">
                                     <div className="icon"><SlackOutlined/></div>
                                     <h4>Monitor</h4>
@@ -106,14 +106,14 @@ export function About() {
                         </Row>
                     </div>
                     <div className="section-sub skills">
-                        <Row gutter={30}>
+                        <Row gutter={16}>
                             <Col span={24}>
                                 <div className="subheading">
                                     <h3>Skills</h3>
                                 </div>
                             </Col>
                             {user.skills.map(function (skill, idx) {
-                                return <Col span={4} key={idx}>
+                                return <Col xs={12} sm={12} md={8} xxl={4} key={idx}>
                                     <div className="skill-item">
                                         <div className="skill-icon">
                                             <Avatar

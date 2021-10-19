@@ -1,4 +1,11 @@
 $base-color: #00A3E1;
+$base-distance-block: 64px;
+$base-distance: 24px;
+$base-distance-item: 12px;
+
+$base-distance-block-m: 32px;
+$base-distance-m: 12px;
+$base-distance-item-m: 6px;
 
 .profile-wrapper {
     .base-button {
@@ -62,7 +69,7 @@ $base-color: #00A3E1;
         border-top: 1px dashed rgba(0, 0, 0, 0.2);
         padding: 50px 0;
         text-align: center;
-        width: calc(100%);
+        width: 100%;
 
         .btn-wrapper {
             padding: 26px 16px 16px;
@@ -109,11 +116,8 @@ $base-color: #00A3E1;
 
     .action-more.homepage {
         border-top: unset;
-        position: fixed;
-        bottom: 0;
-        text-align: center;
         width: 100%;
-        padding-top: 0;
+        padding: 0;
         animation: fadeInLoop 3s steps(120, end) infinite;
 
         &:hover {
@@ -265,12 +269,12 @@ $base-color: #00A3E1;
                             font-size: 16px;
                             font-weight: bold;
                             letter-spacing: .5px;
-                            border-bottom: 2px solid $base-color;
                             position: relative;
                             display: inline-block;
                             margin-right: 15px;
-                            padding-bottom: 2px;
+                            margin-bottom: 4px;
                             color: #222;
+                            width: 70px;
                         }
                     }
                 }
@@ -291,6 +295,8 @@ $base-color: #00A3E1;
 
         .services {
             .service-item {
+                margin-bottom: $base-distance;
+
                 h4 {
                     font-size: 18px;
                     font-weight: bold;
@@ -309,8 +315,15 @@ $base-color: #00A3E1;
 
         .skills {
             .skill-item {
+                margin-bottom: $base-distance;
+
                 .skill-icon {
                     margin-bottom: 12px;
+                }
+                h4{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                 }
 
                 animation: swipeToLeft 3s;
@@ -386,6 +399,192 @@ $base-color: #00A3E1;
                 .skill-detail {
                     h4 {
                         margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-wrapper {
+        .contact-social {
+            .social-item {
+                button {
+                    height: 100%;
+
+                    .icon {
+                        font-size: 64px;
+                        margin-bottom: $base-distance-item;
+                        line-height: 1em;
+                        color: $base-color;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+
+        .page {
+            top: 64px;
+            left: 0;
+
+            .section-container {
+                width: 100%;
+                padding: 0 12px;
+
+                .page-heading {
+                    margin: $base-distance-block-m 0;
+
+                    h2 {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .action-more {
+            padding: $base-distance-block-m 0;
+            .btn-wrapper {
+                button {
+                    padding: 6px 12px;
+                }
+            }
+        }
+
+        .section-sub {
+            margin-bottom: $base-distance-m;
+
+            .subheading {
+                position: relative;
+                margin-bottom: $base-distance-m;
+            }
+
+        }
+
+        .home-wrapper {
+            .banner-section {
+                .banner-content {
+                    h1 {
+                        font-size: 48px;
+                    }
+
+                    p {
+                        font-size: 24px;
+                    }
+
+                }
+            }
+        }
+
+        .about-wrapper {
+            .about {
+                margin-bottom: $base-distance-block-m;
+
+                .about-block {
+                    h3 {
+                        margin-bottom: $base-distance-m;
+                    }
+                }
+
+                .about-info {
+                    ul {
+                        li {
+                            margin-bottom: $base-distance-item-m;
+                        }
+                    }
+
+                    .resume-button {
+                        text-align: center;
+                    }
+                }
+            }
+
+            .services {
+                .service-item {
+                    margin-bottom: $base-distance-m;
+
+                    .ico {
+                        margin-bottom: $base-distance-item-m;
+                    }
+                }
+            }
+
+            .skills {
+                .skill-item {
+                    margin-bottom: $base-distance-m;
+                }
+            }
+        }
+
+        .contact-wrapper {
+            .contact-social {
+                .social-item {
+                    button {
+                        .icon {
+                            font-size: 48px;
+                            margin-bottom: $base-distance-item-m;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 575px){
+        .page {
+            top: 48px;
+            left: 0;
+        }
+
+        .home-wrapper {
+            .banner-section {
+                .banner-content {
+                    h1 {
+                        font-size: 32px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                    }
+
+                }
+            }
+        }
+
+        .resume-wrapper {
+            .timeline {
+                height: 180px;
+                .line-left {
+                    width: 150px;
+                }
+
+                .content-wrapper {
+                    position: absolute;
+                    left: 100px;
+                }
+            }
+
+            .skills {
+                .skill-wrapper {
+                    text-align: left;
+
+                    .skill-detail {
+                        h4 {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-wrapper {
+            .contact-social {
+                .social-item {
+                    button {
+                        .icon {
+                            font-size: 32px;
+                            margin-bottom: $base-distance-item-m;
+                        }
                     }
                 }
             }

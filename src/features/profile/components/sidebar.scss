@@ -1,9 +1,11 @@
+$color-background: #2a2b30;
+
 .sidebar-wrapper {
     position: fixed;
     top: 0;
     height: 100%;
     width: 200px;
-    background-color: #2a2b30;
+    background-color: $color-background;
     overflow: auto;
     left: 0;
     overflow-x: hidden;
@@ -23,6 +25,38 @@
 
         .box-avatar {
             position: relative;
+
+            .avatar-circle {
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
+                font-size: 18px;
+
+                background: transparent;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                color: rgba(0, 0, 0, 0.85);
+                font-variant: tabular-nums;
+                list-style: none;
+                font-feature-settings: 'tnum', "tnum";
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                color: #fff;
+                white-space: nowrap;
+                text-align: center;
+                vertical-align: middle;
+                border-radius: 50%;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                }
+            }
 
             .profile-name {
                 left: 0;
@@ -111,6 +145,101 @@
             .copy {
                 font-size: 12px;
                 color: #777;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .sidebar-wrapper {
+        position: fixed;
+        top: 0;
+        height: 64px;
+        width: 100%;
+        text-align: left;
+
+        .sidebar-content {
+            padding: 0 12px;
+            .box-avatar {
+                display: inline-block;
+                .avatar-circle {
+                    width: 64px;
+                    height: 64px;
+                    line-height: 64px;
+                    font-size: 18px;
+                    margin-right: 6px;
+                }
+
+                .profile-name {
+                    display: none;
+                }
+            }
+
+            .box-menu {
+                display: inline-block;
+                float: right;
+                ul {
+                    li {
+                        display: inline-block;
+                        border-bottom: none;
+                        a {
+                            line-height: 64px;
+                            position: relative;
+                            color: #999;
+                            padding: 0 6px;
+                        }
+                    }
+                }
+            }
+
+            .box-footer {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px){
+    .sidebar-wrapper {
+        position: fixed;
+        top: 0;
+        height: 48px;
+        width: 100%;
+        text-align: left;
+
+        .sidebar-content {
+            .box-avatar {
+                display: inline-block;
+                .avatar-circle {
+                    width: 48px;
+                    height: 48px;
+                    line-height: 48px;
+                    font-size: 18px;
+                    margin-right: 6px;
+                }
+
+                .profile-name {
+                    display: none;
+                }
+            }
+
+            .box-menu {
+                ul {
+                    li {
+                        display: inline-block;
+                        border-bottom: none;
+                        a {
+                            line-height: 48px;
+                            padding: 0 12px;
+                            font-size: 18px;
+
+                            .label{
+                                display: none;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
