@@ -29,19 +29,27 @@ export function Portfolio() {
                             renderItem={item => (
                                 <List.Item
                                     key={item.title}
-                                    actions={[
-                                        <Button type={"link"}
-                                                onClick={event => handleClickButtonLink(event)}
-                                                value={item.repository}
-                                                className="btn-action"
-                                        ><GithubOutlined/> Repository</Button>,
-                                        item.review === null ? null :
-                                            <Button type={"link"}
-                                                    onClick={event => handleClickButtonLink(event)}
-                                                    value={item.review}
-                                                    className="btn-action"
-                                            ><AliwangwangOutlined/> Review</Button>,
-                                    ]}
+                                    actions={
+                                        item.review === null ?
+                                            [
+                                                <Button type={"link"}
+                                                        onClick={event => handleClickButtonLink(event)}
+                                                        value={item.repository}
+                                                        className="btn-action"
+                                                ><GithubOutlined/> Repository</Button>
+                                            ]
+                                            : [
+                                                <Button type={"link"}
+                                                        onClick={event => handleClickButtonLink(event)}
+                                                        value={item.repository}
+                                                        className="btn-action"
+                                                ><GithubOutlined/> Repository</Button>,
+                                                <Button type={"link"}
+                                                        onClick={event => handleClickButtonLink(event)}
+                                                        value={item.review}
+                                                        className="btn-action"
+                                                ><AliwangwangOutlined/> Review</Button>
+                                            ]}
                                     extra={
                                         <img src={item.image} alt=""/>
                                     }
