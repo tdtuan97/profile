@@ -73,5 +73,61 @@
     "github"        : "https://github.com/tdtuan97",
     "email"         : "tdtuan97@gmail.com",
     "avatar_img"    : "user/avatar.jpeg",
-    "background_img": "user/altumcode.jpg"
+    "background_img": "user/altumcode.jpg",
+    "projects"      : [
+        {
+            "type"       : "front-end",
+            "language"   : "Javascript",
+            "name"       : "Mix All",
+            "description": "Learning about ReactJS + Redux. You can listen to music on this site.",
+            "repository" : "https://github.com/tdtuan97/mix-all",
+            "review"     : "https://tdtuan97.github.io/mix-all",
+            "image"      : "program_languages/js-logo.png"
+        },
+        {
+            "type"       : "front-end",
+            "language"   : "Javascript",
+            "name"       : "SSC Mix",
+            "description": "Staff of SSC Office use public services, such as: Lend money, payment order lunch.",
+            "repository" : "https://github.com/tdtuan97/ssc-mix",
+            "review"     : "https://tdtuan97.github.io/ssc-mix",
+            "image"      : "program_languages/js-logo.png"
+        },
+        {
+            "type"       : "front-end",
+            "language"   : "Javascript",
+            "name"       : "Profile",
+            "description": "Display user profile.",
+            "repository" : "https://github.com/tdtuan97/profile/",
+            "review"     : "https://tdtuan97.github.io/profile",
+            "image"      : "program_languages/js-logo.png"
+        },
+        {
+            "type"       : "back-end",
+            "language"   : "Javascript",
+            "name"       : "SSC Mix",
+            "description": "Learning about backend services with NodeJS + Express.",
+            "repository" : "https://github.com/tdtuan97/node-api/",
+            "review"     : null,
+            "image"      : "program_languages/js-logo.png"
+        },
+        {
+            "type"       : "back-end",
+            "language"   : "PHP",
+            "name"       : "Laravel API",
+            "description": "Learning about set up Laravel, Nginx, and MySQL with Docker Composer.",
+            "repository" : "https://github.com/tdtuan97/laravel-api",
+            "review"     : null,
+            "image"      : "program_languages/php-logo.png"
+        },
+        {
+            "type"       : "back-end",
+            "language"   : "PHP",
+            "name"       : "SSC Lunch",
+            "description": "Handle back-end of SSC Office. Access with MySQL using API. Features: OAuth2, JWT, Permission, CRUD, Google Firebase.",
+            "repository" : "https://github.com/tdtuan97/ssc-lunch",
+            "review"     : null,
+            "image"      : "program_languages/php-logo.png"
+        }
+    ]
 }

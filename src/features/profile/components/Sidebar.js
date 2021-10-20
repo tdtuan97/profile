@@ -3,11 +3,10 @@ import {
     Link, useLocation
 } from "react-router-dom";
 
-import {Button} from 'antd';
+import {Button, Image} from 'antd';
 import {
     HomeOutlined,
     UserOutlined,
-    MenuOutlined,
     ContainerOutlined,
     ReconciliationOutlined,
     MailOutlined,
@@ -30,32 +29,36 @@ export function Sidebar() {
     const cls_resume = location.pathname === '/resume' ? 'active' : '';
     const cls_portfolio = location.pathname === '/portfolio' ? 'active' : '';
     const cls_contact = location.pathname === '/contact' ? 'active' : '';
-
+    const avatar_img = process.env.PUBLIC_URL + '/' + user.avatar_img;
     return (
         <div className="sidebar-wrapper">
             <div className="sidebar-content">
                 <div className="box-avatar">
                     <span className="avatar-circle">
-                        <img  src={user.avatar_img} alt={user.full_name}/>
+                        <Image src={avatar_img}/>
                     </span>
                     <h2 className="profile-name">{user.full_name}</h2>
                 </div>
                 <div className="box-menu">
                     <ul>
                         <li>
-                            <Link to="/home" className={cls_home}><HomeOutlined/> <span className="label">Home</span></Link>
+                            <Link to="/home" className={cls_home}><HomeOutlined/> <span
+                                className="label">Home</span></Link>
                         </li>
                         <li>
                             <Link to="/about" className={cls_about}><UserOutlined/> <span className="label">About</span></Link>
                         </li>
                         <li>
-                            <Link to="/resume" className={cls_resume}><ReconciliationOutlined/> <span className="label">Resume</span></Link>
+                            <Link to="/resume" className={cls_resume}><ReconciliationOutlined/> <span
+                                className="label">Resume</span></Link>
                         </li>
                         <li>
-                            <Link to="/portfolio" className={cls_portfolio}><ContainerOutlined/> <span className="label">Portfolio</span></Link>
+                            <Link to="/portfolio" className={cls_portfolio}><ContainerOutlined/> <span
+                                className="label">Portfolio</span></Link>
                         </li>
                         <li>
-                            <Link to="/contact" className={cls_contact}><MailOutlined/> <span className="label">Contact</span></Link>
+                            <Link to="/contact" className={cls_contact}><MailOutlined/> <span
+                                className="label">Contact</span></Link>
                         </li>
                     </ul>
                 </div>

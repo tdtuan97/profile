@@ -4,7 +4,7 @@ import {
     MailOutlined,
     LinkedinOutlined,
 } from '@ant-design/icons';
-import {Row, Col, Timeline, Progress, Button} from 'antd';
+import {Row, Col, Button} from 'antd';
 import {Main} from "../layouts/Main";
 import user from "../../../mock/profile.json";
 import {Link} from "react-router-dom";
@@ -31,14 +31,14 @@ export function Contact() {
                     <div className="contact">
                         <div className="section-sub contact-social">
                             <Row gutter={30}>
-                                <Col span={24}>
+                                <Col xs={24}>
                                     <div className="subheading">
                                         <h3>LET'S TALK</h3>
                                     </div>
                                 </Col>
                             </Row>
                             <Row gutter={30}>
-                                <Col span={8}>
+                                <Col xs={8}>
                                     <div className="social-item">
                                         <Button type="link" value={user.email}
                                                 onClick={(e) => handleClickMail(e)}>
@@ -49,7 +49,7 @@ export function Contact() {
                                         </Button>
                                     </div>
                                 </Col>
-                                <Col span={8}>
+                                <Col xs={8}>
                                     <div className="social-item">
                                         <Button type="link" value={user.facebook}
                                                 onClick={(e) => handleClickSocial(e)}>
@@ -60,7 +60,7 @@ export function Contact() {
                                         </Button>
                                     </div>
                                 </Col>
-                                <Col span={8}>
+                                <Col xs={8}>
                                     <div className="social-item">
                                         <Button type="link" value={user.linkedin}
                                                 onClick={(e) => handleClickSocial(e)}>

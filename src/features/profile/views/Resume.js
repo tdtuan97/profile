@@ -1,5 +1,4 @@
 import React from 'react';
-import {} from '@ant-design/icons';
 import {Row, Col, Timeline, Progress, Button} from 'antd';
 import {Main} from "../layouts/Main";
 import user from "../../../mock/profile.json";
