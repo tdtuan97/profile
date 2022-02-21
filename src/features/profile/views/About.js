@@ -62,12 +62,12 @@ export function About() {
                                             <span className="value">Available</span>
                                         </li>
                                     </ul>
-                                    <div className="resume-button">
+                                    {/*<div className="resume-button">
                                         <Button ghost
                                                 className="base-button"
                                                 size="large"
                                         >Download Resume</Button>
-                                    </div>
+                                    </div>*/}
                                 </div>
                             </Col>
                         </Row>

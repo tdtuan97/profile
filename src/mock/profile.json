@@ -29,7 +29,7 @@
         {
             "name" : "PHP/Laravel",
             "type" : "back-end",
-            "level": 80,
+            "level": 90,
             "image": "skills/laravel.png"
         },
         {
@@ -47,13 +47,13 @@
         {
             "name" : "ReactJS/Redux",
             "type" : "front-end",
-            "level": 60,
+            "level": 80,
             "image": "skills/react_redux.png"
         },
         {
             "name" : "Linux",
             "type" : "back-end",
-            "level": 60,
+            "level": 70,
             "image": "skills/linux.jpeg"
         },
         {
@@ -64,10 +64,11 @@
         }
     ],
     "descriptions"  : [
-        "Dolor reprehenderit aut repudiandae maiores recusandae. Consequatur dolor nisi labore commodi ipsa? Excepturi velit laboriosam at voluptatibus cupiditate est vel. Dolorem praesentium itaque fugiat placeat quas consequatur? Obcaecati natus rerum",
-        "Consectetur consectetur nesciunt nesciunt blanditiis amet? Quod quis unde aliquid excepturi laudantium? Illo architecto aliquam velit illo magnam neque perferendis sint Incidunt eius ipsa inventore labore eos velit. Minus hic magni reiciendis necessitatibus ex Quidem officia deleniti accusamus obcaecati dolores. Porro culpa quibusdam impedit porro praesentium excepturi. Alias ab consequatur?"
+        "Hi, my name is Tuan. I'm 24 years old. I'm web developer. I have ~2.5 years experience about PHP, Laravel, HTML/CSS/JS, Microservices, Linux, React/Redux, ....",
+        "I hope to hear from you in regard to the next steps in the hiring process.",
+        "Thank you."
     ],
-    "phone_number"  : "0325017619",
+    "phone_number"  : "0969500619",
     "facebook"      : "https://facebook.com/tdtuan97",
     "linkedin"      : "https://linkedin.com/in/tran-tuan-b915b215b",
     "github"        : "https://github.com/tdtuan97",
